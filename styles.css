@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    display: flex;
+    margin: 1em 5em;
+
+    
+}
+.nav-bar a{
+    
+    color: white;
+    text-decoration: none;
+}
+
+.end-page-element {
+    margin-left:auto
+}
+
+.nav-btn {
+    padding: 0.5em 1.5em;
+    border: 2px solid rgb(255, 102, 0, 0.8);
+    background-color: #000;
+    color: white;
+    border-radius: 2.0em;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    background-color:rgb(255, 102, 0, 0.4);
+}
