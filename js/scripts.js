@@ -71,3 +71,23 @@ $(function () {
         $(this).addClass('active');
     });
 });
+
+
+function focusLeftItem() {
+    var item = document.getElementById("left_text");
+    item.style.visibility = "visible";
+}
+function unFocusLeftItem() {
+    var item = document.getElementById("left_text");
+    item.style.visibility = "hidden";
+}
+
+function focusRightItem() {
+    var item = document.getElementById("right_text");
+    item.style.visibility = "visible";
+}
+function unFocusRightItem() {
+    var item = document.getElementById("right_text");
+    item.style.visibility = "hidden";
+}
+

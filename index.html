@@ -65,8 +65,15 @@
     <div class="">
         <div class="row vh-md-100">
             <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center"> 
-                <div class="circle"></div>
-                <div class="inner-circle">DEMU</div>
+                <div class="circle">
+                    <div class="left"  onmouseover="focusLeftItem()" onmouseout="unFocusLeftItem()" ></div>
+                    <div class="right"  onmouseover="focusRightItem()" onmouseout="unFocusRightItem()" ></div>
+                    <div class="inner-circle">DEMU</div>
+                    <p id="left_text" class="left-text" >FANS</p>
+                    <p id="right_text" class="right-text" >CREATORS</p>
+                    
+                </div>
+                
             </div>
         </div>
     </div>
