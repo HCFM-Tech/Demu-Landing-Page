@@ -7853,6 +7853,7 @@ footer h5 {
 }
 
 .circle {
+  z-index: 1511;
   display: inline-block;
   position: relative;
   width: 550px;
