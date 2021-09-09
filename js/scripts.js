@@ -90,4 +90,13 @@ function unFocusRightItem() {
     var item = document.getElementById("right_text");
     item.style.visibility = "hidden";
 }
-
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+}
+function subscribedForm() {
+    var div = document.getElementById("mc_embed_signup");
+    div.innerHTML = "";
+    sleep(500).then(() => {
+        div.innerHTML = "<p class=\"lead py-3\">Thanks for signing up!</p>"
+    });
+}
