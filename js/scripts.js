@@ -94,9 +94,11 @@ function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 function subscribedForm() {
-    var div = document.getElementById("mc_embed_signup");
-    div.innerHTML = "";
-    sleep(500).then(() => {
-        div.innerHTML = "<p class=\"lead py-3\">Thanks for signing up!</p>"
-    });
+    if(document.getElementById("email_signup_input").innerText !== "") {
+        var div = document.getElementById("mc_embed_signup");
+        div.innerHTML = "";
+        sleep(500).then(() => {
+            div.innerHTML = "<p class=\"lead py-3\">Thanks for signing up!</p>"
+        });
+    }
 }
