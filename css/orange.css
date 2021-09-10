@@ -1,13 +1,5 @@
-﻿/*!
-* Created by Kroplet (https://www.kroplet.com) 
-* The easiest way to create Bootstrap 4 themes. 
-*/
+﻿@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
 
-/*!
-* Bootstrap v4.1.0 (https://getbootstrap.com) 
-* Copyright 2011-2017 The Bootstrap Authors 
-* Copyright 2011-2017 Twitter, Inc. 
-* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
 :root {
   --blue: #2979ff;
   --indigo: #3d5afe;
@@ -7881,6 +7873,7 @@ footer h5 {
 }
 
 .inner-circle {
+  font-family: 'Red Hat Display', sans-serif;
   position: absolute;
   color:white;
   display: flex;
