@@ -7882,6 +7882,7 @@ footer h5 {
 
 .inner-circle {
   position: absolute;
+  color:white;
   display: flex;
   margin: auto;
   left: 50%;
