@@ -115,6 +115,7 @@ if(screen.width>850){
     document.getElementById('right_text').style.fontSize='3vw';
 
 } else {
+    //jo
     //console.log("mobile!!!");
     //document.getElementById('circle').setAttribute("style","display:block;width:80vw;height:80vh;");
     document.getElementById('circle').style.width='90vw';
