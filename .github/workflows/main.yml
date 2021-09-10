@@ -1,0 +1,4 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy to Firebase Hosting
+uses: FirebaseExtended/action-hosting-deploy@v0
