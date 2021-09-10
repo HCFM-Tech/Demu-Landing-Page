@@ -111,6 +111,8 @@ if(screen.width>850){
     document.getElementById('inner-circle').style.width='10vw';
     document.getElementById('inner-circle').style.height='10vw';
     document.getElementById('inner-circle').style.fontSize='3vw';
+    document.getElementById('left_text').style.fontSize='3vw';
+    document.getElementById('right_text').style.fontSize='3vw';
 
 } else {
     //console.log("mobile!!!");
@@ -122,4 +124,6 @@ if(screen.width>850){
     document.getElementById('inner-circle').style.height='28vw';
     document.getElementById("inner-circle").style.transform = "translate(-14vw, -14vw)"
     document.getElementById('inner-circle').style.fontSize='8vw';
+    document.getElementById('left_text').style.fontSize='5.5vw';
+    document.getElementById('right_text').style.fontSize='5.5vw';
 }
