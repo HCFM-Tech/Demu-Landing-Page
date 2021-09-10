@@ -7829,6 +7829,7 @@ footer h5 {
 }
 
 .circle {
+  margin-top: 20px;
   z-index: 1511;
   display: inline-block;
   position: relative;
@@ -7850,13 +7851,13 @@ footer h5 {
   background-size: cover;
   left: -5px;
   z-index: 1510;
+  
 }
 
 .left:hover {
   transform: scale(105%);
   filter: brightness(0.70);
-  color:red
-  
+  cursor: pointer;
 }
 
 .right {
@@ -7865,11 +7866,13 @@ footer h5 {
   background-size: cover;
   right: -5px;
   z-index: 1500;
+  
 } 
 
 .right:hover {
   transform: scale(105%);
   filter: brightness(0.70);
+  cursor: pointer;
 }
 
 .inner-circle {
