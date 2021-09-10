@@ -7859,10 +7859,11 @@ footer h5 {
   display: inline-block;
   position: relative;
   width: 550px;
-  height: 550px;
+  height: 70vh;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
-  
+  align-items: center;
 }
 
 .circle .left, .circle .right {
