@@ -111,8 +111,8 @@ if(screen.width>850){
     document.getElementById('inner-circle').style.width='10vw';
     document.getElementById('inner-circle').style.height='10vw';
     document.getElementById('inner-circle').style.fontSize='3vw';
-    document.getElementById('left_text').style.fontSize='2.5vw';
-    document.getElementById('right_text').style.fontSize='2.5vw';
+    document.getElementById('left_text').style.fontSize='5vh';
+    document.getElementById('right_text').style.fontSize='5vh';
 
 } else {
     //jo
