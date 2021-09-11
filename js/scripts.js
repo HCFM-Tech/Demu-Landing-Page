@@ -105,8 +105,8 @@ function subscribedForm() {
 if(screen.width>850){
     //console.log("desktop!!!");
     //document.getElementById('circle').setAttribute("style","display:block;width:50vw;height:50vh;");
-    document.getElementById('circle').style.width='50vw';
-    document.getElementById('circle').style.height='50vw';
+    document.getElementById('circle').style.width='90vh';
+    document.getElementById('circle').style.height='90vh';
 
     document.getElementById('inner-circle').style.width='10vw';
     document.getElementById('inner-circle').style.height='10vw';
