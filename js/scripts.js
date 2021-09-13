@@ -109,6 +109,13 @@ if(index) {
         div.innerHTML = "";
         div.innerHTML = "<p class=\"lead py-3\">Thanks for signing up!</p>"
     });
+    var userType = window.location.pathname.split(".html")[0];
+    userType = userType.split("/")[1]
+    gtag('event', userType, {
+        'event_label': 'New Email',
+        'event_category': 'new_email',
+        'non_interaction': true
+      });
 }
 
 // Screensize of Desktop
