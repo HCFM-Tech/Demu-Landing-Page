@@ -114,7 +114,8 @@ if(index) {
     });
     var userType = window.location.pathname.split(".html")[0];
     userType = userType.split("/")[1]
-    gtag('event', userType, {
+    var eventName = userType+"_email_lead"
+    gtag('event', eventName, {
         'event_label': 'New Email',
         'event_category': 'new_email',
         'non_interaction': true
