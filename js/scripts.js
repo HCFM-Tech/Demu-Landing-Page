@@ -93,10 +93,13 @@ function unFocusRightItem() {
 function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
-function subscribedForm() {
-    var name = window.location.pathname.split(".html")[0];
-    name = name.split("/")[1]
-    window.location.replace(window.location.href+"?index="+name)
+
+function submittedForm() {
+    sleep(500).then(() => {
+        var name = window.location.pathname.split(".html")[0];
+        name = name.split("/")[1]
+        window.location.replace(window.location.href+"?index="+name)
+    })
 }
 
 //Get parameter 
