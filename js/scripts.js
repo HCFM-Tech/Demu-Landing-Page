@@ -94,6 +94,16 @@ function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 function subscribedForm() {
+    var name = window.location.pathname.split(".html")[0];
+    name = name.split("/")[1]
+    window.location.replace(window.location.href+"?index="+name)
+}
+
+//Get parameter 
+var url_string = window.location.href;
+var url = new URL(url_string);
+var index = url.searchParams.get("index");
+if(index) {
     var div = document.getElementById("mc_embed_signup");
     sleep(500).then(() => {
         div.innerHTML = "";
@@ -101,13 +111,12 @@ function subscribedForm() {
     });
 }
 
-
+// Screensize of Desktop
 if(screen.width>850){
     //console.log("desktop!!!");
     //document.getElementById('circle').setAttribute("style","display:block;width:50vw;height:50vh;");
     document.getElementById('circle').style.width='90vh';
     document.getElementById('circle').style.height='90vh';
-
     document.getElementById('inner-circle').style.width='10vw';
     document.getElementById('inner-circle').style.height='10vw';
     document.getElementById('inner-circle').style.fontSize='3vw';
@@ -119,8 +128,7 @@ if(screen.width>850){
     //console.log("mobile!!!");
     //document.getElementById('circle').setAttribute("style","display:block;width:80vw;height:80vh;");
     document.getElementById('circle').style.width='90vw';
-    document.getElementById('circle').style.height='90vw';
-
+    document.getElementById('circle').style.height='90vw';öö
     document.getElementById('inner-circle').style.width='28vw';
     document.getElementById('inner-circle').style.height='28vw';
     document.getElementById("inner-circle").style.transform = "translate(-14vw, -14vw)"
