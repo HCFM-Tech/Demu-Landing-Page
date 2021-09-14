@@ -267,10 +267,12 @@ function sleep (time) {
 
 function submittedForm() {
     console.log("Submitted")
-    var email = document.getElementById("mce-EMAIL").value;
-    var name = window.location.pathname.split(".html")[0];
-    name = name.split("/")[1];
-    window.location.replace(window.location.href+"?index="+name+"&code="+md5(email).substring(0,6));
+    sleep(500).then(() => {
+        var email = document.getElementById("mce-EMAIL").value;
+        var name = window.location.pathname.split(".html")[0];
+        name = name.split("/")[1];
+        window.location.replace(window.location.href+"?index="+name+"&code="+md5(email).substring(0,6));
+    });   
 }
 
 
@@ -302,7 +304,6 @@ if(index) {
         'non_interaction': true
     });
     
-    // Add referal code
 
 }
 
