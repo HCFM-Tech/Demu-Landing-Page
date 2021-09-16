@@ -266,7 +266,9 @@ function sleep (time) {
 }
 
 function submittedForm() {
-    console.log("Submitted")
+    console.log("Submitted");
+    document.getElementById("mce-EMAIL").style.visibility = "hidden";
+    document.getElementById("mc-embedded-subscribe").style.visibility = "hidden";
     sleep(500).then(() => {
         var email = document.getElementById("mce-EMAIL").value;
         var name = window.location.pathname.split(".html")[0];
@@ -324,11 +326,13 @@ if(screen.width>850){
     //console.log("mobile!!!");
     //document.getElementById('circle').setAttribute("style","display:block;width:80vw;height:80vh;");
     document.getElementById('circle').style.width='90vw';
-    document.getElementById('circle').style.height='90vw';öö
+    document.getElementById('circle').style.height='90vw';
     document.getElementById('inner-circle').style.width='28vw';
     document.getElementById('inner-circle').style.height='28vw';
     document.getElementById("inner-circle").style.transform = "translate(-14vw, -14vw)"
     document.getElementById('inner-circle').style.fontSize='8vw';
     document.getElementById('left_text').style.fontSize='5.5vw';
     document.getElementById('right_text').style.fontSize='5.5vw';
+    focusRightItem();
+    focusLeftItem();
 }
