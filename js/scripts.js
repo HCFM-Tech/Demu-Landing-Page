@@ -335,4 +335,6 @@ if(screen.width>850){
     document.getElementById('right_text').style.fontSize='5.5vw';
     focusRightItem();
     focusLeftItem();
+    document.getElementById("left_circle").style.filter = "brightness(0.7)";
+    document.getElementById("right_circle").style.filter = "brightness(0.7)";
 }
