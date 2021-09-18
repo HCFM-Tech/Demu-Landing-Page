@@ -266,15 +266,16 @@ function sleep (time) {
 }
 
 function submittedForm() {
-    console.log("Submitted");
-    document.getElementById("mce-EMAIL").style.visibility = "hidden";
-    document.getElementById("mc-embedded-subscribe").style.visibility = "hidden";
     sleep(500).then(() => {
+        console.log("Submitted");
+        document.getElementById("mce-EMAIL").style.visibility = "hidden";
+        document.getElementById("mc-embedded-subscribe").style.visibility = "hidden";
+
         var email = document.getElementById("mce-EMAIL").value;
         var name = window.location.pathname.split(".html")[0];
         name = name.split("/")[1];
         window.location.replace(window.location.href+"?index="+name+"&code="+md5(email).substring(0,6));
-    });   
+    });
 }
 
 
