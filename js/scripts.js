@@ -309,6 +309,14 @@ if(index) {
     
 
 }
+var ref = url.searchParams.get("ref");
+if(ref){
+    gtag('event', "ref_email", {
+        'event_label': 'New Ref',
+        'event_category': 'new_ref_lead',
+        'non_interaction': true
+    });
+}
 
 // Screensize of Desktop
 if(screen.width>850){
