@@ -315,6 +315,8 @@ if(screen.width>850){
     document.getElementById('right_text').style.fontSize='5vh';
     document.getElementById("left_text").style.visibility = "visible";
     document.getElementById("right_text").style.visibility = "visible";
+    document.getElementById("left_circle").style.filter = "brightness(0.8)";
+    document.getElementById("right_circle").style.filter = "brightness(0.8)";
 } else {
     //jo
     //console.log("mobile!!!");
