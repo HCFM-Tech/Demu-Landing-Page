@@ -7851,7 +7851,7 @@ footer h5 {
   background-size: cover;
   left: -5px;
   z-index: 1510;
-  
+  filter: brightness(0.8);
 }
 
 .left:hover {
@@ -7866,7 +7866,7 @@ footer h5 {
   background-size: cover;
   right: -5px;
   z-index: 1500;
-  
+  filter: brightness(0.8);
 } 
 
 .right:hover {
@@ -7901,10 +7901,9 @@ footer h5 {
   position: absolute;
   display: flex;
   margin: auto;
-  visibility: hidden;
   left: 13%;
   top: 46%;
-  color:white;
+  color: white;
   margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
@@ -7917,7 +7916,6 @@ footer h5 {
   position: absolute;
   display: flex;
   margin: auto;
-  visibility: hidden;
   left: 65%;
   top: 46%;
   color:white;
@@ -7925,7 +7923,4 @@ footer h5 {
   font-size: 30px;
   font-weight: bold;
   z-index: 3000;
-}
-.circle-content {
-  height: 100%
 }
