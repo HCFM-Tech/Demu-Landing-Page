@@ -244,23 +244,7 @@ $(function () {
 });
 
 
-function focusLeftItem() {
-    var item = document.getElementById("left_text");
-    item.style.visibility = "visible";
-}
-function unFocusLeftItem() {
-    var item = document.getElementById("left_text");
-    item.style.visibility = "hidden";
-}
 
-function focusRightItem() {
-    var item = document.getElementById("right_text");
-    item.style.visibility = "visible";
-}
-function unFocusRightItem() {
-    var item = document.getElementById("right_text");
-    item.style.visibility = "hidden";
-}
 function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
@@ -322,28 +306,25 @@ if(ref){
 if(screen.width>850){
     //console.log("desktop!!!");
     //document.getElementById('circle').setAttribute("style","display:block;width:50vw;height:50vh;");
-    document.getElementById('circle').style.width='90vh';
-    document.getElementById('circle').style.height='90vh';
+    document.getElementById('circle').style.width='80vh';
+    document.getElementById('circle').style.height='80vh';
     document.getElementById('inner-circle').style.width='10vw';
     document.getElementById('inner-circle').style.height='10vw';
     document.getElementById('inner-circle').style.fontSize='3vw';
     document.getElementById('left_text').style.fontSize='5vh';
     document.getElementById('right_text').style.fontSize='5vh';
-
 } else {
     //jo
     //console.log("mobile!!!");
     //document.getElementById('circle').setAttribute("style","display:block;width:80vw;height:80vh;");
     document.getElementById('circle').style.width='90vw';
     document.getElementById('circle').style.height='90vw';
-    document.getElementById('inner-circle').style.width='28vw';
-    document.getElementById('inner-circle').style.height='28vw';
-    document.getElementById("inner-circle").style.transform = "translate(-14vw, -14vw)"
-    document.getElementById('inner-circle').style.fontSize='8vw';
+    document.getElementById('inner-circle').style.width='24vw';
+    document.getElementById('inner-circle').style.height='24vw';
+    document.getElementById("inner-circle").style.transform = "translate(-12vw, -12vw)"
     document.getElementById('left_text').style.fontSize='5.5vw';
     document.getElementById('right_text').style.fontSize='5.5vw';
-    focusRightItem();
-    focusLeftItem();
     document.getElementById("left_circle").style.filter = "brightness(0.7)";
     document.getElementById("right_circle").style.filter = "brightness(0.7)";
+    document.getElementById("logo_image").style.width="25%";
 }
