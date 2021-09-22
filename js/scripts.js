@@ -243,7 +243,23 @@ $(function () {
     });
 });
 
+function focusLeftItem() {
+    var item = document.getElementById("left_circle");
+    item.style.filter = "brightness(0.7)";
+}
+function unFocusLeftItem() {
+    var item = document.getElementById("left_circle");
+    item.style.filter = "brightness(0.8)";
+}
 
+function focusRightItem() {
+    var item = document.getElementById("right_circle");
+    item.style.filter = "brightness(0.7)";
+}
+function unFocusRightItem() {
+    var item = document.getElementById("right_circle");
+    item.style.filter = "brightness(0.8)";
+}
 
 function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
