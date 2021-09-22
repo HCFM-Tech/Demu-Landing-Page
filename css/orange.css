@@ -7900,6 +7900,7 @@ footer h5 {
   z-index: 5000;
   position: absolute;
   display: flex;
+  visibility: visible;
   margin: auto;
   left: 13%;
   top: 46%;
@@ -7918,6 +7919,7 @@ footer h5 {
   margin: auto;
   left: 65%;
   top: 46%;
+  visibility: visible;
   color:white;
   margin: 0 auto;
   font-size: 30px;
