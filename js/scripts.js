@@ -313,6 +313,8 @@ if(screen.width>850){
     document.getElementById('inner-circle').style.fontSize='3vw';
     document.getElementById('left_text').style.fontSize='5vh';
     document.getElementById('right_text').style.fontSize='5vh';
+    document.getElementById("left_text").style.visibility = "visible";
+    document.getElementById("right_text").style.visibility = "visible";
 } else {
     //jo
     //console.log("mobile!!!");
