@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T35YHTXC5Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        //TODO: Do not push with debug-mode true
+        gtag('config', 'G-T35YHTXC5Z');
+
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="/img/favicon.png" sizes="32x32">
+    <title>Demu - Creators</title>
+    <meta name="description"
+          content="Decentralized music streaming network shifting power to artists."/>
+
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="../css/orange.css" id="theme-color">
+</head>
+<body style="overflow-x: hidden;">
+
+<!--navigation-->
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="../index.html">
+                <img src="/img/logo_demu.png" style="width: 20%;">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<!--hero header-->
+<section class="py-7 py-md-0 bg-hero" id="home">
+    <div class="container">
+        <div class="row vh-md-100">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h1 class="heading-black text-capitalize">Free for creators. Forever.</h1>
+                <p class="lead py-3">A decentralized music streaming platform that leverages the potential of blockchain technology to give artists and
+                    and music lovers the best experience in the ecosystem.</p>
+                <!-- Begin Mailchimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                <iframe name="dummyframe" id="dummyframe" style="display: none;" ></iframe>
+                <div id="mc_embed_signup">
+                    <form onsubmit="submittedForm()" action="https://us-central1-beta-signup-f3742.cloudfunctions.net/addCreatorEmail" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="dummyframe">
+                        <div id="mc_embed_signup_scroll" style="align-items: center; justify-content: center;display: flex;">
+                            <input type="email" value="" name="email" style="padding: 8px;margin-right: 8px;border-radius: 5px;" id="mce-EMAIL" placeholder="Email-Address" required>
+                            <input type="text" name="userType" value="creator" hidden>
+                            <input type="submit" value="Join Beta" name="subscribe"  id="mc-embedded-subscribe" class="btn btn-primary d-inline-flex flex-row align-items-center">
+                        </div>
+                    </form>
+                </div>
+                <div id="referCode"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- features section -->
+<section class="pt-6 pb-7" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="heading-black">Bringing creators and fans closer</h2>
+                <p class="text-muted lead">DEMU makes it possible for fans to support their favorite artists in ways which were not previously possible. </p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row feature-boxes">
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-primary">
+                            <div class="icon-box-inner">
+                                <span data-feather="credit-card" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>You get your fair share</h5>
+                        <p class="text-muted">The listener's subscription fee is given directly to the artists based on their listening history.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-success">
+                            <div class="icon-box-inner">
+                                <span data-feather="pie-chart" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Stay independent, using your own token</h5>
+                        <p class="text-muted">At DEMU, artists can raise money by creating their own "creator"-tokens. Use this to stay independent.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-danger">
+                            <div class="icon-box-inner">
+                                <span data-feather="codepen" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Create & sell your own NFTs</h5>
+                        <p class="text-muted">Our platform allows creators to create NFTs and bind them to real objects like albums, CD and more.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-info">
+                            <div class="icon-box-inner">
+                                <span data-feather="globe" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Get discovered</h5>
+                        <p class="text-muted">On DEMU, small creators can build an audience through our discovery feature. Getting discovered has never been easier.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-7 bg-dark section-angle top-right bottom-right" id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="heading-black">You own your music.</h2>
+                <p class="text-muted lead">Demu will never charge artists to upload their own work on the platform.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="py-6" style="margin-left: 10px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mr-auto">
+                <h5>About Demu</h5>
+                <p class="text-muted">Demu is a decentralized music streaming platform that is shifting power to the creators. Join the 1000s of artists and listeners using Demu.</p>
+                <ul class="list-inline social social-sm">
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/demu_app/"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/DemuApp"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 
+            <div class="col-sm-2">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Partners</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Listeners</a></li>
+                    <li><a href="#">Artists</a></li>
+                </ul>
+            </div>
+            -->
+            <div class="col-sm-2">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:markus@demu.app">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-muted text-center small-xl">
+                &copy; 2021 Demu - All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--scroll to top-->
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
