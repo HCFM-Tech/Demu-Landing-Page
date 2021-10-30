@@ -77,13 +77,11 @@
                 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
                 <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 <div id="mc_embed_signup">
-                    <form onsubmit="submittedForm()" action="https://us-central1-beta-signup-f3742.cloudfunctions.net/addListenerEmail" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="dummyframe">
-                        <div id="mc_embed_signup_scroll" style="align-items: center; justify-content: center;display: flex;">
-                            <input type="email" value="" name="email" style="padding: 8px;margin-right: 8px;border-radius: 5px;" id="mce-EMAIL" placeholder="Email-Address" required>
-                            <input type="text" name="userType" value="creator" hidden>
-                            <input type="submit" value="Join Beta" name="subscribe"  id="mc-embedded-subscribe" class="btn btn-primary d-inline-flex flex-row align-items-center">
-                        </div>
-                    </form>
+                    <div id="mc_embed_signup_scroll" style="align-items: center; justify-content: center;display: flex;">
+                        <input type="email" value="" name="email" style="padding: 8px;margin-right: 8px;border-radius: 5px;" id="mce-EMAIL-fans" placeholder="Email-Address" required>
+                        <input type="text" name="userType" value="creator" hidden>
+                        <button name="subscribe" onclick="addFansEmail()" id="mc-embedded-subscribe-fans" class="btn btn-primary d-inline-flex flex-row align-items-center">Join Beta</button>
+                    </div>
                 </div>
                 <div id="referCode"></div>
                 <br>
@@ -278,6 +276,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="../js/scripts.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../js/scriptsBefore.js"></script>
 </body>
 </html>
