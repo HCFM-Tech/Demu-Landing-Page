@@ -337,6 +337,9 @@ if(screen.width>850){
 }
 function addCreatorEmail() {
     var creatorEmail = document.getElementById("mce-EMAIL-creator").value;
+    if (creatorEmail === "") {
+        return;
+    }
     console.log("Creator!: ", creatorEmail)
     axios.post("https://europe-west3-beta-signup-f3742.cloudfunctions.net/addCreatorEmail",
     {
@@ -356,6 +359,10 @@ function addCreatorEmail() {
 }
 function addFansEmail() {
     var fanEmail = document.getElementById("mce-EMAIL-fans").value;
+
+    if (fanEmail === ""){
+        return;
+    }
     
     axios.post("https://europe-west3-beta-signup-f3742.cloudfunctions.net/addListenerEmail",
     {
